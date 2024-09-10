@@ -13,7 +13,7 @@ export function Navbar() {
                 </div>
                 <div className='search-button'>
                     <img src='./src/assets/logo/Search.png' />
-                    <input type="search" placeholder='search' />
+                    <p>Search</p>
                 </div>
                 <div className='nav-cart'>
                     <img className='cart-img' src='./src/assets/logo/Stroke 1.png' />

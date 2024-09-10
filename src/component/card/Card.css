@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    height: 352px;
+    border-radius: 20px;
+    padding: 12px 12px 24px 12px;
+    gap: 12px;
+    background: #FFFFFF;
+
+    .product-description {
+        display: flex;
+        flex-direction: column;
+        width: 261px;
+        height: 316px;
+        gap: 12px;
+
+        .image {
+            display: flex;
+            width: 261px;
+            height: 192px;
+            border-radius: 12px;
+        }
+
+        .other-details {
+            display: flex;
+            flex-direction: column;
+            width: 251px;
+            height: 112px;
+            gap: 20px;
+
+            .description {
+                display: flex;
+                height: 12px;
+            }
+
+            .title {
+                display: flex;
+                height: 20px;
+            }
+
+            .color {
+                display: flex;
+                height: 24px;
+            }
+
+            .mrp {
+                display: flex;
+                margin-top: 8px;
+                height: 20px;
+            }
+        }
+    }
+
+
+}
