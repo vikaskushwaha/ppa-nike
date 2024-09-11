@@ -1,8 +1,8 @@
 .main-container {
   display: flex;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 1024px;
+  width: 1440px;
   background-color: #F7F8F9;
   top: 1126px;
   left: -960px;

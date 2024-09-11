@@ -23,10 +23,7 @@ export function ProductContainer() {
                         firstrow.map((item, index) => (
                             <Card
                                 key={index}
-                                image={item.image}
-                                description={item.description}
-                                title={item.title}
-                                mrp={item.mrp}
+                                {...item}
                             />
                         ))
                     }
@@ -36,10 +33,7 @@ export function ProductContainer() {
                         secondrow.map((item, index) => (
                             <Card
                                 key={index}
-                                image={item.image}
-                                description={item.description}
-                                title={item.title}
-                                mrp={item.mrp}
+                                {...item}
                             />
                         ))
                     }

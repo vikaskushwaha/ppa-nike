@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -7,6 +15,8 @@
     padding: 12px 12px 24px 12px;
     gap: 12px;
     background: #FFFFFF;
+    border: 1.5px solid white;
+    transition: border-color 0.3s, box-shadow 0.3s;
 
     .product-description {
         display: flex;
@@ -16,11 +26,25 @@
         gap: 12px;
 
         .image {
-            display: flex;
+            position: relative;
             width: 261px;
             height: 192px;
             border-radius: 12px;
+
+            .heart-size {
+                position: absolute;
+                width: 15.83px;
+                height: 15px;
+                top: 10px;
+                left: 230px;
+
+                /* border: 1.5px solid gray; */
+
+
+                z-index: 1000;
+            }
         }
+
 
         .other-details {
             display: flex;
@@ -29,28 +53,78 @@
             height: 112px;
             gap: 20px;
 
-            .description {
+            .details {
                 display: flex;
-                height: 12px;
+                flex-direction: column;
+                gap: 8px;
+                width: 212px;
+                height: 72px;
+
+                .description {
+                    font-family: 'Montserrat';
+                    display: flex;
+                    height: 12px;
+                    color: red;
+                    font-weight: 600;
+                    line-height: 12px;
+                }
+
+                .title {
+                    display: flex;
+                    font-family: 'Montserrat';
+                    height: 20px;
+                    font-weight: 600;
+                    line-height: 19.5px;
+                    letter-spacing: 2%;
+                    size: 16px;
+                }
+
+                .color {
+                    display: flex;
+                    height: 24px;
+                }
+
+                .color-picker {
+                    display: flex;
+                    flex-direction: row;
+                    width: 88px;
+                    height: 24px;
+                    gap: 8px;
+                    justify-content: space-around;
+
+                    .circle {
+                        display: flex;
+                        border-radius: 50px;
+                        height: 24px;
+                        width: 24px;
+                        border-color: #8ea7ec;
+                        border: 1.5px solid;
+
+                    }
+                }
             }
 
-            .title {
-                display: flex;
-                height: 20px;
-            }
 
-            .color {
-                display: flex;
-                height: 24px;
-            }
 
             .mrp {
                 display: flex;
+                font-family: 'Montserrat';
                 margin-top: 8px;
                 height: 20px;
+                font-weight: 600;
+                line-height: 19.5px;
+                letter-spacing: 2%;
+                size: 16px;
+
             }
         }
     }
 
+
+}
+
+.card:hover {
+    border-color: rgb(87, 87, 238);
+    /* Change border color on hover */
 
 }
