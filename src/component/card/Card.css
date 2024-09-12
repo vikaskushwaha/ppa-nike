@@ -90,7 +90,7 @@
                     width: 88px;
                     height: 24px;
                     gap: 8px;
-                    justify-content: space-around;
+
 
                     .circle {
                         display: flex;
